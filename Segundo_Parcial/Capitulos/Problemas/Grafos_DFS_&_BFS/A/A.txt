@@ -1,0 +1,36 @@
+A network of autonomous, battery-powered, data acquisition stations has been installed to monitor the
+climate in the region of Amazon. An order-dispatch station can initiate transmission of instructions to
+the control stations so that they change their current parameters. To avoid overloading the battery, each
+station (including the order-dispatch station) can only transmit to two other stations. The destinataries
+of a station are the two closest stations. In case of draw, the first criterion is to chose the westernmost
+(leftmost on the map), and the second criterion is to chose the southernmost (lowest on the map).
+You are commissioned by Amazon State Government to write a program that decides if, given the
+localization of each station, messages can reach all stations.
+
+Input
+
+The input consists of an integer N, followed by N pairs of integers Xi, Y i, indicating the localization
+coordinates of each station. The first pair of coordinates determines the position of the order-dispatch
+station, while the remaining N − 1 pairs are the coordinates of the other stations. The following
+constraints are imposed: −20 ≤ Xi, Y i ≤ 20, and 1 ≤ N ≤ 1000. The input is terminated with N = 0.
+
+Output
+
+For each given expression, the output will echo a line with the indicating if all stations can be reached
+or not (see sample output for the exact format).
+
+Sample Input
+
+4
+1 0 0 1 -1 0 0 -1
+8
+1 0 1 1 0 1 -1 1 -1 0 -1 -1 0 -1 1 -1
+6
+0 3 0 4 1 3 -1 3 -1 -4 -2 -5
+0
+
+Sample Output
+
+All stations are reachable.
+All stations are reachable.
+There are stations that are unreachable.
