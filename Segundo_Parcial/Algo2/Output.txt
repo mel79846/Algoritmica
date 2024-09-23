@@ -1,0 +1,6 @@
+Ingrese el n&uacute;mero de palabras a insertar: Ingrese las palabras: 
+existe la palabra apt
+No existe la palabra appli
+existe la palabra application
+existe la palabra appli
+No existe la palabra application
