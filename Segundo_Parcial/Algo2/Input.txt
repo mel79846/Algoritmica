@@ -1,0 +1,6 @@
+5
+apple
+application
+apt
+banana
+bat
